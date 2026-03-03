@@ -10,61 +10,139 @@
 
 <style>
 body {
-font-family: Arial, sans-serif;
 margin: 0;
-background-color: #f4f6f9;
+font-family: Arial, sans-serif;
+background-color: #000000;
+color: white;
 }
 
+/* HEADER */
 header {
-background-color: #111827;
+background-color: #000000;
+padding: 20px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid #3D3D3D;
+}
+
+.logo-container {
+display: flex;
+align-items: center;
+}
+
+.logo-img {
+height: 55px;
+width: auto;
+transition: 0.3s;
+}
+
+.logo-img:hover {
+transform: scale(1.05);
+}
+
+nav a {
 color: white;
-padding: 20px;
+text-decoration: none;
+margin-left: 20px;
+font-size: 14px;
+}
+
+nav a:hover {
+color: #A10000;
+}
+
+/* HERO */
+.hero {
+background: linear-gradient(to right, #000000, #3D3D3D);
+padding: 80px 20px;
 text-align: center;
 }
 
-.container {
+.hero h1 {
+font-size: 40px;
+color: #A10000;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 18px;
+color: #ccc;
+}
+
+/* PRODUCTS */
+.section-title {
+text-align: center;
+font-size: 28px;
+margin-top: 40px;
+color: #A10000;
+}
+
+.products {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-padding: 20px;
-gap: 20px;
+gap: 30px;
+padding: 60px 20px;
 }
 
 .card {
-background: white;
+background-color: #3D3D3D;
 width: 320px;
 border-radius: 10px;
-box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-padding: 15px;
+overflow: hidden;
+box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+transition: 0.3s;
+}
+
+.card:hover {
+transform: translateY(-5px);
 }
 
 .card img {
 width: 100%;
-border-radius: 8px;
+height: 220px;
+object-fit: cover;
+}
+
+.card-content {
+padding: 20px;
 }
 
 .card h2 {
-margin-top: 10px;
+color: #A10000;
+margin-top: 0;
 }
 
 .price {
-font-size: 20px;
+font-size: 18px;
 font-weight: bold;
-color: #111827;
-}
-
-button {
-background-color: #2563eb;
-color: white;
-border: none;
-padding: 10px 15px;
-border-radius: 5px;
-cursor: pointer;
 margin-top: 10px;
 }
 
+button {
+background-color: #A10000;
+border: none;
+padding: 10px 15px;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 15px;
+width: 100%;
+}
+
 button:hover {
-background-color: #1e40af;
+background-color: #800000;
+}
+
+/* FOOTER */
+footer {
+background-color: #000000;
+padding: 40px;
+text-align: center;
+border-top: 1px solid #3D3D3D;
+color: #aaa;
+font-size: 14px;
 }
 </style>
 </head>
@@ -72,62 +150,99 @@ background-color: #1e40af;
 <body>
 
 <header>
-<h1>PeptidosCR</h1>
-<p>Tienda especializada en péptidos de alta calidad</p>
+<div class="logo-container">
+<a href="#">
+<img src="peptidescr.jpg" alt="PeptidosCR Logo" class="logo-img">
+</a>
+</div>
+
+<nav>
+<a href="#">Inicio</a>
+<a href="#">Productos</a>
+<a href="#">Contacto</a>
+</nav>
 </header>
 
-<div class="container">
+<section class="hero">
+<h1>Péptidos de Alta Pureza</h1>
+<p>Calidad, precisión y respaldo profesional en cada producto.</p>
+</section>
 
-<!-- PRODUCTO 1 -->
+<h2 class="section-title">Productos Destacados</h2>
+
+<section class="products">
+
+<!-- AMP-2P -->
 <div class="card">
-<img src="https://via.placeholder.com/300x200" alt="GHK-CU">
-<h2>GHK-CU</h2>
-
-<p><strong>Tipo:</strong> Péptido regenerativo</p>
-<p><strong>Función:</strong> Regeneración de piel, producción de colágeno, reparación celular.</p>
-<p><strong>Uso:</strong> Ideal para protocolos de anti-envejecimiento.</p>
-<p><strong>Aplicación:</strong> Uso tópico o inyectable bajo supervisión profesional.</p>
-
-<p class="price">$80</p>
+<img src="amp2p.jpg" alt="AMP-2P">
+<div class="card-content">
+<h2>AMP-2P</h2>
+<p><strong>Tipo:</strong> Péptido metabólico</p>
+<p><strong>Función:</strong> Apoyo en protocolos de reducción de grasa corporal.</p>
+<p><strong>Aplicación:</strong> Uso bajo supervisión profesional.</p>
+<p class="price">$110</p>
 
 <button
 class="snipcart-add-item"
-data-item-id="ghkcu"
-data-item-price="80"
+data-item-id="amp2p"
+data-item-price="110"
 data-item-url="/"
-data-item-description="GHK-CU - Peptido regenerativo"
-data-item-name="GHK-CU">
+data-item-description="AMP-2P Peptido metabolico"
+data-item-name="AMP-2P">
 Agregar al carrito
 </button>
 </div>
+</div>
 
-<!-- PRODUCTO 2 -->
+<!-- AMP-3G -->
 <div class="card">
-<img src="https://via.placeholder.com/300x200" alt="AMP-3P">
-<h2>AMP-3P</h2>
-
-<p><strong>Tipo:</strong> Péptido metabólico</p>
-<p><strong>Función:</strong> Apoyo en pérdida de grasa corporal.</p>
-<p><strong>Uso:</strong> Protocolos de reducción de grasa.</p>
-<p><strong>Aplicación:</strong> Inyectable bajo asesoría médica.</p>
-
+<img src="amp3p.jpg" alt="AMP-3G">
+<div class="card-content">
+<h2>AMP-3G</h2>
+<p><strong>Tipo:</strong> Péptido avanzado</p>
+<p><strong>Función:</strong> Optimización metabólica y control de grasa.</p>
+<p><strong>Aplicación:</strong> Bajo protocolo especializado.</p>
 <p class="price">$120</p>
 
 <button
 class="snipcart-add-item"
-data-item-id="amp3p"
+data-item-id="amp3g"
 data-item-price="120"
 data-item-url="/"
-data-item-description="AMP-3P - Peptido metabolico"
-data-item-name="AMP-3P">
+data-item-description="AMP-3G Peptido metabolico"
+data-item-name="AMP-3G">
 Agregar al carrito
 </button>
 </div>
-
 </div>
 
-</body>
-</html>
+<!-- Tesamorelin -->
+<div class="card">
+<img src="tesamorelin.jpg" alt="Tesamorelin">
+<div class="card-content">
+<h2>Tesamorelin</h2>
+<p><strong>Tipo:</strong> Péptido hormonal</p>
+<p><strong>Función:</strong> Estimula producción de hormona de crecimiento.</p>
+<p><strong>Aplicación:</strong> Administración bajo indicación médica.</p>
+<p class="price">$180</p>
+
+<button
+class="snipcart-add-item"
+data-item-id="tesamorelin"
+data-item-price="180"
+data-item-url="/"
+data-item-description="Tesamorelin Peptido hormonal"
+data-item-name="Tesamorelin">
+Agregar al carrito
+</button>
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 PeptidosCR - Todos los derechos reservados
+</footer>
 
 </body>
 </html>
