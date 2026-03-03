@@ -1,46 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>PeptidosCR</title>
 
 <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
 <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
-
 <div hidden id="snipcart" data-api-key="TU_API_KEY_AQUI"></div>
 
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background-color: #f4f6f9;
+}
+
+header {
+background-color: #111827;
+color: white;
+padding: 20px;
+text-align: center;
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 20px;
+gap: 20px;
+}
+
+.card {
+background: white;
+width: 320px;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+padding: 15px;
+}
+
+.card img {
+width: 100%;
+border-radius: 8px;
+}
+
+.card h2 {
+margin-top: 10px;
+}
+
+.price {
+font-size: 20px;
+font-weight: bold;
+color: #111827;
+}
+
+button {
+background-color: #2563eb;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+button:hover {
+background-color: #1e40af;
+}
+</style>
 </head>
 
 <body>
 
+<header>
 <h1>PeptidosCR</h1>
+<p>Tienda especializada en péptidos de alta calidad</p>
+</header>
 
+<div class="container">
+
+<!-- PRODUCTO 1 -->
+<div class="card">
+<img src="https://via.placeholder.com/300x200" alt="GHK-CU">
 <h2>GHK-CU</h2>
-<p>Regeneración de piel</p>
+
+<p><strong>Tipo:</strong> Péptido regenerativo</p>
+<p><strong>Función:</strong> Regeneración de piel, producción de colágeno, reparación celular.</p>
+<p><strong>Uso:</strong> Ideal para protocolos de anti-envejecimiento.</p>
+<p><strong>Aplicación:</strong> Uso tópico o inyectable bajo supervisión profesional.</p>
+
+<p class="price">$80</p>
 
 <button
 class="snipcart-add-item"
 data-item-id="ghkcu"
 data-item-price="80"
 data-item-url="/"
-data-item-description="Peptido GHK-CU"
+data-item-description="GHK-CU - Peptido regenerativo"
 data-item-name="GHK-CU">
-Comprar $80
+Agregar al carrito
 </button>
+</div>
 
-<br><br>
-
+<!-- PRODUCTO 2 -->
+<div class="card">
+<img src="https://via.placeholder.com/300x200" alt="AMP-3P">
 <h2>AMP-3P</h2>
-<p>Quema de grasa</p>
+
+<p><strong>Tipo:</strong> Péptido metabólico</p>
+<p><strong>Función:</strong> Apoyo en pérdida de grasa corporal.</p>
+<p><strong>Uso:</strong> Protocolos de reducción de grasa.</p>
+<p><strong>Aplicación:</strong> Inyectable bajo asesoría médica.</p>
+
+<p class="price">$120</p>
 
 <button
 class="snipcart-add-item"
 data-item-id="amp3p"
 data-item-price="120"
 data-item-url="/"
-data-item-description="Peptido AMP-3P"
+data-item-description="AMP-3P - Peptido metabolico"
 data-item-name="AMP-3P">
-Comprar $120
+Agregar al carrito
 </button>
+</div>
+
+</div>
+
+</body>
+</html>
 
 </body>
 </html>
