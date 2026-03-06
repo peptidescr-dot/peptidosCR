@@ -1,158 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="UTF-8">
 <title>PeptidosCR</title>
 
+<link rel="stylesheet" href="styles.css">
+
 <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
 <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+
 <div hidden id="snipcart" data-api-key="TU_API_KEY_AQUI"></div>
 
-<style>
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background-color: #000000;
-color: white;
-}
-
-/* HEADER */
-header {
-background-color: #000000;
-padding: 20px 40px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-border-bottom: 1px solid #3D3D3D;
-}
-
-.logo-container {
-display: flex;
-align-items: center;
-}
-
-.logo-img {
-height: 55px;
-width: auto;
-transition: 0.3s;
-}
-
-.logo-img:hover {
-transform: scale(1.05);
-}
-
-nav a {
-color: white;
-text-decoration: none;
-margin-left: 20px;
-font-size: 14px;
-}
-
-nav a:hover {
-color: #A10000;
-}
-
-/* HERO */
-.hero {
-background: linear-gradient(to right, #000000, #3D3D3D);
-padding: 80px 20px;
-text-align: center;
-}
-
-.hero h1 {
-font-size: 40px;
-color: #A10000;
-margin-bottom: 20px;
-}
-
-.hero p {
-font-size: 18px;
-color: #ccc;
-}
-
-/* PRODUCTS */
-.section-title {
-text-align: center;
-font-size: 28px;
-margin-top: 40px;
-color: #A10000;
-}
-
-.products {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 30px;
-padding: 60px 20px;
-}
-
-.card {
-background-color: #3D3D3D;
-width: 320px;
-border-radius: 10px;
-overflow: hidden;
-box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-transition: 0.3s;
-}
-
-.card:hover {
-transform: translateY(-5px);
-}
-
-.card img {
-width: 100%;
-height: 220px;
-object-fit: cover;
-}
-
-.card-content {
-padding: 20px;
-}
-
-.card h2 {
-color: #A10000;
-margin-top: 0;
-}
-
-.price {
-font-size: 18px;
-font-weight: bold;
-margin-top: 10px;
-}
-
-button {
-background-color: #A10000;
-border: none;
-padding: 10px 15px;
-color: white;
-border-radius: 5px;
-cursor: pointer;
-margin-top: 15px;
-width: 100%;
-}
-
-button:hover {
-background-color: #800000;
-}
-
-/* FOOTER */
-footer {
-background-color: #000000;
-padding: 40px;
-text-align: center;
-border-top: 1px solid #3D3D3D;
-color: #aaa;
-font-size: 14px;
-}
-</style>
 </head>
 
 <body>
 
 <header>
+
 <div class="logo-container">
 <a href="#">
-<img src="peptidescr.jpg" alt="PeptidosCR Logo" class="logo-img">
+<img src="peptidescr.jpg" class="logo-img">
 </a>
 </div>
 
@@ -161,25 +29,37 @@ font-size: 14px;
 <a href="#">Productos</a>
 <a href="#">Contacto</a>
 </nav>
+
 </header>
 
 <section class="hero">
+
 <h1>Péptidos de Alta Pureza</h1>
-<p>Calidad, precisión y respaldo profesional en cada producto.</p>
+
+<p>
+Calidad, precisión y respaldo profesional en cada producto.
+</p>
+
 </section>
 
 <h2 class="section-title">Productos Destacados</h2>
 
 <section class="products">
 
-<!-- AMP-2P -->
 <div class="card">
-<img src="amp2p.jpg" alt="AMP-2P">
+
+<img src="amp2p.jpg">
+
 <div class="card-content">
+
 <h2>AMP-2P</h2>
+
 <p><strong>Tipo:</strong> Péptido metabólico</p>
+
 <p><strong>Función:</strong> Apoyo en protocolos de reducción de grasa corporal.</p>
+
 <p><strong>Aplicación:</strong> Uso bajo supervisión profesional.</p>
+
 <p class="price">$110</p>
 
 <button
@@ -189,19 +69,29 @@ data-item-price="110"
 data-item-url="/"
 data-item-description="AMP-2P Peptido metabolico"
 data-item-name="AMP-2P">
+
 Agregar al carrito
+
 </button>
-</div>
+
 </div>
 
-<!-- AMP-3G -->
+</div>
+
 <div class="card">
-<img src="amp3p.jpg" alt="AMP-3G">
+
+<img src="amp3p.jpg">
+
 <div class="card-content">
+
 <h2>AMP-3G</h2>
+
 <p><strong>Tipo:</strong> Péptido avanzado</p>
-<p><strong>Función:</strong> Optimización metabólica y control de grasa.</p>
+
+<p><strong>Función:</strong> Optimización metabólica.</p>
+
 <p><strong>Aplicación:</strong> Bajo protocolo especializado.</p>
+
 <p class="price">$120</p>
 
 <button
@@ -211,19 +101,29 @@ data-item-price="120"
 data-item-url="/"
 data-item-description="AMP-3G Peptido metabolico"
 data-item-name="AMP-3G">
+
 Agregar al carrito
+
 </button>
-</div>
+
 </div>
 
-<!-- Tesamorelin -->
+</div>
+
 <div class="card">
-<img src="tesamorelin.jpg" alt="Tesamorelin">
+
+<img src="tesamorelin.jpg">
+
 <div class="card-content">
+
 <h2>Tesamorelin</h2>
+
 <p><strong>Tipo:</strong> Péptido hormonal</p>
-<p><strong>Función:</strong> Estimula producción de hormona de crecimiento.</p>
-<p><strong>Aplicación:</strong> Administración bajo indicación médica.</p>
+
+<p><strong>Función:</strong> Estimula hormona de crecimiento.</p>
+
+<p><strong>Aplicación:</strong> Bajo indicación médica.</p>
+
 <p class="price">$180</p>
 
 <button
@@ -233,16 +133,23 @@ data-item-price="180"
 data-item-url="/"
 data-item-description="Tesamorelin Peptido hormonal"
 data-item-name="Tesamorelin">
+
 Agregar al carrito
+
 </button>
+
 </div>
+
 </div>
 
 </section>
 
 <footer>
-© 2026 PeptidosCR - Todos los derechos reservados
+
+© 2026 PeptidosCR
+
 </footer>
 
 </body>
+
 </html>
