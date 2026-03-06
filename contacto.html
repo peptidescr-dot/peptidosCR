@@ -40,17 +40,16 @@ puede enviarnos un mensaje y le responderemos lo antes posible.
 
 <div class="contact-form">
 
-<form>
+<form action="https://formspree.io/f/xbdzjzzp" method="POST">
 
-<input type="text" placeholder="Nombre completo" required>
+<label>Nombre Completo</label>
+<input type="text" name="nombre" required>
 
-<input type="email" placeholder="Correo electrónico" required>
+<label>Correo Electrónico</label>
+<input type="email" name="email" required>
 
-<input type="tel" placeholder="Teléfono">
-
-<input type="text" placeholder="Asunto">
-
-<textarea placeholder="Escriba su mensaje"></textarea>
+<label>Mensaje</label>
+<textarea name="mensaje" rows="5" required></textarea>
 
 <button type="submit">Enviar Mensaje</button>
 
