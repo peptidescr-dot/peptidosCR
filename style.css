@@ -23,10 +23,10 @@ align-items:center;
 padding:10px;
 }
 
-.logo-img {
-height: 120px;
-width: auto;
-transition: 0.3s;
+.logo-img{
+height:140px;
+width:auto;
+border-radius:40px;
 }
 
 .logo-img:hover {
