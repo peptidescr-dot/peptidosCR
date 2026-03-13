@@ -53,7 +53,7 @@ color: #A10000;
 background:linear-gradient(90deg,#000,#3D3D3D);
 padding:120px 20px;
 text-align:center;
-
+border-top:6px solid #A10000;
 }
 
 .hero h1{
