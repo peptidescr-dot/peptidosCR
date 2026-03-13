@@ -425,6 +425,7 @@ border-radius:var(--radius);
 text-align:center;
 transition:0.4s;
 box-shadow:var(--shadow-glow);
+border-radius:25px;
 }
 
 .slide:hover{
@@ -436,6 +437,7 @@ box-shadow:var(--shadow-glow-hover);
 width:100%;
 height:160px;
 object-fit:contain;
+border-radius:25px;
 filter:drop-shadow(0 0 6px rgba(255,0,0,0.4));
 }
 
