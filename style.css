@@ -134,7 +134,8 @@ opacity:0.15;
 ========================================================= */
 
 .hero-texto{
-max-width:500px;
+max-width:480px;
+flex:1;
 }
 
 .hero-texto h1{
@@ -195,7 +196,8 @@ box-shadow:0 0 20px rgba(255,0,0,0.8);
 .hero-slider{
 position:relative;
 overflow:hidden;
-width:500%;
+flex:1.8;
+width:100%;
 max-width:1000px;
 margin-left:auto;
 }
@@ -414,7 +416,7 @@ animation:scroll 34s linear infinite;
 ========================================================= */
 
 .slide{
-width:190px;
+width:300px;
 background:var(--color-secundario);
 padding:8px;
 border-radius:var(--radius);
