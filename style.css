@@ -416,7 +416,7 @@ animation:scroll 34s linear infinite;
 ========================================================= */
 
 .slide{
-width:300px;
+width:500px;
 background:var(--color-secundario);
 padding:8px;
 border-radius:var(--radius);
