@@ -48,30 +48,112 @@ nav a:hover {
 color: #A10000;
 }
 
-/* HERO */
 
-.hero{
 
-background:linear-gradient(90deg,#000,#3D3D3D);
-padding:120px 20px;
-text-align:center;
-border-top:6px solid #A10000;
+/* HERO NUEVO */
+
+.hero-peptidos{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:100px 10%;
+background:linear-gradient(90deg,#1c1c1c,#3D3D3D);
+gap:60px;
+
 }
 
-.hero h1{
+/* TEXTO */
+
+.hero-texto{
+
+max-width:500px;
+
+}
+
+.hero-texto h1{
 
 font-size:48px;
 color:#A10000;
-margin-bottom:20px;
+margin-bottom:10px;
 
 }
 
-.hero p{
+.hero-texto h2{
 
-font-size:20px;
+font-size:30px;
+margin-bottom:15px;
+color:white;
+
+}
+
+.subtitulo{
+
+font-size:18px;
 color:#ccc;
+margin-bottom:10px;
 
 }
+
+.descripcion{
+
+font-size:16px;
+line-height:1.6;
+color:#ddd;
+
+}
+
+/* BOTON HERO */
+
+.btn-productos{
+
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:#A10000;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+transition:0.3s;
+
+}
+
+.btn-productos:hover{
+
+background:#c40000;
+transform:translateY(-3px);
+
+}
+
+/* SLIDER HERO */
+
+.hero-slider{
+
+width:600px;
+overflow:hidden;
+
+}
+
+.hero-slider .slider{
+
+width:100%;
+
+}
+
+.hero-slider .slide{
+
+width:200px;
+
+}
+
+.hero-slider .slide img{
+
+height:140px;
+
+}
+
+
 
 /* TITULO SECCIONES */
 
@@ -342,7 +424,7 @@ width:100%;
 display:flex;
 gap:20px;
 width:calc(180px * 16);
-animation:scroll 18s linear infinite;
+animation:scroll 28s linear infinite;
 
 }
 
