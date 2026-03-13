@@ -109,13 +109,15 @@ color:#ddd;
 
 display:inline-block;
 margin-top:25px;
-padding:14px 30px;
+padding:15px 35px;
 background:#A10000;
 color:white;
 text-decoration:none;
 border-radius:6px;
 font-weight:bold;
+letter-spacing:1px;
 transition:0.3s;
+box-shadow:0 0 10px rgba(255,0,0,0.4);
 
 }
 
@@ -123,6 +125,7 @@ transition:0.3s;
 
 background:#c40000;
 transform:translateY(-3px);
+box-shadow:0 0 20px rgba(255,0,0,0.8);
 
 }
 
@@ -153,6 +156,19 @@ height:140px;
 
 }
 
+
+.hero-peptidos::before{
+
+content:"";
+position:absolute;
+top:-200px;
+right:-200px;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#A10000 0%,transparent 70%);
+opacity:0.15;
+
+}
 
 
 /* TITULO SECCIONES */
@@ -583,3 +599,58 @@ padding:6px;
 font-size:14px;
 
 }
+
+
+/* FONDO CIENTIFICO */
+
+.science-bg{
+
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:url("https://www.transparenttextures.com/patterns/hexellence.png");
+opacity:0.05;
+animation:scienceMove 40s linear infinite;
+
+}
+
+@keyframes scienceMove{
+
+0%{background-position:0 0;}
+100%{background-position:1000px 1000px;}
+
+}
+
+.hero-peptidos{
+
+position:relative;
+overflow:hidden;
+
+}
+
+
+/* EFECTO LABORATORIO PRODUCTOS */
+
+.slide{
+
+box-shadow:0 0 10px rgba(255,0,0,0.2);
+transition:0.4s;
+
+}
+
+.slide:hover{
+
+box-shadow:0 0 25px rgba(255,0,0,0.6);
+transform:translateY(-6px);
+
+}
+
+.slide img{
+
+filter:drop-shadow(0 0 6px rgba(255,0,0,0.4));
+
+}
+
+
