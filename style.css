@@ -196,6 +196,7 @@ box-shadow:0 0 20px rgba(255,0,0,0.8);
 .hero-slider{
 position:relative;
 overflow:hidden;
+border-radius:25px;
 flex:1.8;
 width:100%;
 max-width:1000px;
@@ -207,10 +208,11 @@ margin-left:auto;
 content:"";
 position:absolute;
 top:0;
-width:100px;
-height:500%;
+width:80px;
+height:100%;
 z-index:2;
 pointer-events:none;
+border-radius:25px;
 }
 
 .hero-slider::before{
