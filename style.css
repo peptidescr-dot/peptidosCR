@@ -416,9 +416,9 @@ animation:scroll 34s linear infinite;
 ========================================================= */
 
 .slide{
-width:500px;
+width:180px;
 background:var(--color-secundario);
-padding:8px;
+padding:20px;
 border-radius:var(--radius);
 text-align:center;
 transition:0.4s;
@@ -432,14 +432,14 @@ box-shadow:var(--shadow-glow-hover);
 
 .slide img{
 width:100%;
-height:95px;
+height:160px;
 object-fit:contain;
 filter:drop-shadow(0 0 6px rgba(255,0,0,0.4));
 }
 
 .slide p{
-margin-top:10px;
-font-size:14px;
+margin-top:12px;
+font-size:15px;
 font-weight:bold;
 }
 
