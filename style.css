@@ -121,8 +121,8 @@ content:"";
 position:absolute;
 top:-200px;
 right:-200px;
-width:400px;
-height:400px;
+width:200px;
+height:200px;
 background:radial-gradient(circle,var(--color-principal) 0%,transparent 70%);
 opacity:0.15;
 }
