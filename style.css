@@ -399,9 +399,9 @@ animation-play-state:paused;
 
 .slide-track{
 display:flex;
-gap:20px;
+gap:25px;
 width:max-content;
-animation:scroll 28s linear infinite;
+animation:scroll 34s linear infinite;
 }
 
 
@@ -411,7 +411,7 @@ animation:scroll 28s linear infinite;
 ========================================================= */
 
 .slide{
-width:180px;
+width:230px;
 background:var(--color-secundario);
 padding:12px;
 border-radius:var(--radius);
@@ -446,7 +446,7 @@ font-weight:bold;
 
 @keyframes scroll{
 0%{transform:translateX(0);}
-100%{transform:translateX(-50%);}
+100%{transform:translateX(-35%);}
 }
 
 
