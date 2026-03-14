@@ -345,8 +345,9 @@ margin-bottom:40px;
 
 .products-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
+grid-template-columns: repeat(4, 1fr);
+gap: 25px;
+margin-top: 40px;
 }
 
 
