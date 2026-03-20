@@ -1,3 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AMP-1P 5mg | PeptidosCR</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/product.css">
+
+</head>
+
+<body>
+
+<!-- ========================================= -->
+<!-- TOP BAR -->
+<!-- ========================================= -->
+
+<div class="topbar">
+Envíos disponibles en Costa Rica | WhatsApp: +506 8322-6720
+</div>
+
+<!-- ========================================= -->
+<!-- HEADER -->
+<!-- ========================================= -->
+
+<header>
+
+<div class="logo-container">
+<a href="../index.html">
+<img src="../img/peptidescr.jpg" class="logo-img">
+</a>
+</div>
+
+<nav>
+<a href="../index.html">Inicio</a>
+<a href="../products/products.html">Productos</a>
+<a href="../contacto/contacto.html">Contacto</a>
+</nav>
+
+</header>
+
+<!-- ========================================= -->
+<!-- PRODUCTO -->
+<!-- ========================================= -->
+
 <section class="product-detail">
 
 <div class="product-container">
@@ -16,7 +64,9 @@
 Péptido metabólico enfocado en la regulación de la glucosa y control del apetito.
 </p>
 
+<a href="https://wa.me/50683226720?text=Hola%20quiero%20información%20sobre%20AMP-1P%205mg" target="_blank">
 <button class="btn-comprar">Comprar por WhatsApp</button>
+</a>
 
 <div class="product-meta">
 <p><strong>Tipo:</strong> Péptido metabólico (GLP-1).</p>
@@ -27,7 +77,10 @@ Péptido metabólico enfocado en la regulación de la glucosa y control del apet
 
 </div>
 
-<!-- DESCRIPCIÓN -->
+<!-- ========================================= -->
+<!-- TABS -->
+<!-- ========================================= -->
+
 <div class="tabs">
 
 <div class="tab-buttons">
@@ -111,3 +164,62 @@ El comprador asume la responsabilidad del manejo seguro y el cumplimiento normat
 </div>
 
 </section>
+
+<!-- ========================================= -->
+<!-- FOOTER -->
+<!-- ========================================= -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-col">
+<h3>PeptidosCR</h3>
+<p>Péptidos de alta pureza para investigación.</p>
+</div>
+
+<div class="footer-col">
+<h3>Links</h3>
+<a href="../index.html">Inicio</a>
+<a href="../products/products.html">Productos</a>
+</div>
+
+<div class="footer-col">
+<h3>Contacto</h3>
+<p>peptidescr@gmail.com</p>
+<p>+506 83226720</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 PeptidosCR</p>
+</div>
+
+</footer>
+
+<!-- ========================================= -->
+<!-- SCRIPT TABS -->
+<!-- ========================================= -->
+
+<script>
+function openTab(evt, tabName){
+
+let tabcontent = document.getElementsByClassName("tab-content");
+for(let i=0;i<tabcontent.length;i++){
+tabcontent[i].classList.remove("active");
+}
+
+let tabbtn = document.getElementsByClassName("tab-btn");
+for(let i=0;i<tabbtn.length;i++){
+tabbtn[i].classList.remove("active");
+}
+
+document.getElementById(tabName).classList.add("active");
+evt.currentTarget.classList.add("active");
+
+}
+</script>
+
+</body>
+</html>
