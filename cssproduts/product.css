@@ -1,0 +1,218 @@
+/* =========================================
+   CONTENEDOR PRINCIPAL
+========================================= */
+
+.product-detail{
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+/* =========================================
+   GRID PRINCIPAL
+========================================= */
+
+.product-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+/* =========================================
+   IMAGEN
+========================================= */
+
+.product-image{
+text-align:center;
+}
+
+.product-image img{
+width:100%;
+max-width:400px;
+border-radius:12px;
+background:var(--color-info);
+padding:20px;
+box-shadow:var(--shadow-card);
+}
+
+/* =========================================
+   INFO PRODUCTO
+========================================= */
+
+.product-info h1{
+color:var(--color-principal);
+font-size:32px;
+margin-bottom:10px;
+}
+
+.product-short{
+color:var(--color-texto-suave);
+margin-bottom:20px;
+font-size:15px;
+line-height:1.6;
+}
+
+/* =========================================
+   BOTON COMPRA
+========================================= */
+
+.btn-comprar{
+background:var(--color-principal);
+padding:15px;
+border:none;
+color:white;
+width:100%;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+transition:var(--transition);
+box-shadow:var(--shadow-glow);
+}
+
+.btn-comprar:hover{
+background:var(--color-principal-hover);
+transform:translateY(-2px);
+box-shadow:var(--shadow-glow-hover);
+}
+
+/* =========================================
+   META INFO
+========================================= */
+
+.product-meta{
+margin-top:20px;
+font-size:14px;
+color:var(--color-texto-suave);
+line-height:1.6;
+}
+
+/* =========================================
+   TABS
+========================================= */
+
+.tabs{
+margin-top:60px;
+}
+
+/* BOTONES */
+
+.tab-buttons{
+display:flex;
+gap:10px;
+border-bottom:1px solid #444;
+flex-wrap:wrap;
+}
+
+.tab-btn{
+background:none;
+border:none;
+color:var(--color-texto-suave);
+padding:12px 20px;
+cursor:pointer;
+font-size:15px;
+transition:var(--transition);
+border-bottom:2px solid transparent;
+}
+
+.tab-btn:hover{
+color:white;
+}
+
+.tab-btn.active{
+color:var(--color-principal);
+border-bottom:2px solid var(--color-principal);
+}
+
+/* CONTENIDO */
+
+.tab-content{
+display:none;
+padding:30px 5px;
+text-align:left;
+line-height:1.7;
+
+opacity:0;
+transform:translateY(10px);
+transition:0.3s;
+}
+
+.tab-content.active{
+display:block;
+opacity:1;
+transform:translateY(0);
+}
+
+/* TITULOS */
+
+.tab-content h2,
+.tab-content h3{
+color:var(--color-principal);
+margin-top:20px;
+}
+
+/* LISTAS */
+
+.tab-content ul{
+padding-left:20px;
+}
+
+.tab-content li{
+margin-bottom:8px;
+}
+
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+
+@media (max-width:900px){
+
+.product-container{
+grid-template-columns:1fr;
+gap:40px;
+text-align:center;
+}
+
+.product-info{
+text-align:center;
+}
+
+.product-meta{
+text-align:left;
+}
+
+}
+
+/* =========================================
+   RESPONSIVE CELULAR
+========================================= */
+
+@media (max-width:600px){
+
+.product-detail{
+padding:40px 15px;
+}
+
+.product-info h1{
+font-size:26px;
+}
+
+.product-short{
+font-size:14px;
+}
+
+.product-image img{
+max-width:300px;
+padding:15px;
+}
+
+.tab-btn{
+font-size:14px;
+padding:10px;
+}
+
+.tab-content{
+font-size:14px;
+}
+
+}
