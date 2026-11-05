@@ -1,41 +1,22 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contacto | PeptidesCR</title>
-
+<title data-es="Contacto | PeptidosCR" data-en="Contact | PeptidosCR">Contacto | PeptidosCR</title>
 <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body>
 
-<!-- ========================================= -->
-<!-- SNIPCART -->
-<!-- ========================================= -->
-
 <div hidden id="snipcart" data-api-key="TU_API_KEY_AQUI"></div>
 
-
-<!-- ========================================= -->
-<!-- TOP BAR -->
-<!-- ========================================= -->
-
-<div class="topbar">
+<div class="topbar" data-es="Envíos disponibles en Costa Rica | WhatsApp: +506 8322-6720" data-en="Shipping available in Costa Rica | WhatsApp: +506 8322-6720">
 Envíos disponibles en Costa Rica | WhatsApp: +506 8322-6720
 </div>
-
-<!-- ========================================= -->
-<!-- HEADER / NAVEGACIÓN -->
-<!-- ========================================= -->
   
 <header>
-
 <div class="logo-container">
 <a href="../index.html">
 <img src="../img/peptidescr.jpg" class="logo-img" alt="Logo Peptidos CR">
@@ -43,159 +24,122 @@ Envíos disponibles en Costa Rica | WhatsApp: +506 8322-6720
 </div>
 
 <nav>
-<a href="../index.html">Inicio</a>
-<a href="../products/products.html">Productos</a>
-<a href="../contacto/contacto.html">Contacto</a>
-</nav>
+<a href="../index.html" data-es="Inicio" data-en="Home">Inicio</a>
+<a href="../products/products.html" data-es="Productos" data-en="Products">Productos</a>
+<a href="../contacto/contacto.html" data-es="Contacto" data-en="Contact">Contacto</a>
 
+<div class="site-controls" style="display: flex; align-items: center; gap: 10px; margin-left: 20px;">
+<button id="theme-toggle" class="control-btn" title="Cambiar tema oscuro/claro" style="background:var(--color-secundario); color:var(--color-texto); border:1px solid var(--border-color); padding:5px 8px; border-radius:var(--radius-sm); cursor:pointer;">🌓</button>
+<select id="lang-switch" class="control-select" style="background:var(--color-secundario); color:var(--color-texto); border:1px solid var(--border-color); padding:5px 8px; border-radius:var(--radius-sm); cursor:pointer;">
+<option value="es">ES</option>
+<option value="en">EN</option>
+</select>
+</div>
+</nav>
 </header>
 
 <section class="contact-container">
+<h1 data-es="Contáctenos" data-en="Contact Us">Contáctenos</h1>
 
-<h1>Contáctenos</h1>
-
-<p>
+<p data-es="Si tiene alguna consulta sobre nuestros productos, pedidos o disponibilidad, puede enviarnos un mensaje y le responderemos lo antes posible." data-en="If you have any questions about our products, orders, or availability, you can send us a message and we will reply as soon as possible.">
 Si tiene alguna consulta sobre nuestros productos, pedidos o disponibilidad,
 puede enviarnos un mensaje y le responderemos lo antes posible.
 </p>
 
 <div class="contact-grid">
-
 <div class="contact-form">
-
 <form action="https://formspree.io/f/xbdzjzzp" method="POST">
+<label data-es="Nombre Completo" data-en="Full Name">Nombre Completo</label>
+<input type="text" name="nombre" required>
 
-<label>Nombre Completo</label> <input type="text" name="nombre" required>
+<label data-es="Correo Electrónico" data-en="Email">Correo Electrónico</label>
+<input type="email" name="email" required>
 
-<label>Correo Electrónico</label> <input type="email" name="email" required>
-
-<label>Mensaje</label>
-
+<label data-es="Mensaje" data-en="Message">Mensaje</label>
 <textarea name="mensaje" rows="5" required></textarea>
 
-<button type="submit">Enviar Mensaje</button>
-
+<button type="submit" data-es="Enviar Mensaje" data-en="Send Message">Enviar Mensaje</button>
 </form>
-
 </div>
 
 <div class="contact-info">
-
-<h3>Información de contacto</h3>
-
+<h3 data-es="Información de contacto" data-en="Contact Information">Información de contacto</h3>
 <p><b>Email:</b> peptidescr@gmail.com</p>
-
-<p><b>WhatsApp:</b> +506 8322 6720</p>
-<p>+506 8498 9587</p>
-
-<p><b>Horario:</b></p>
-
-<p>Lunes - Viernes</p>
-<p>7:00 AM – 5:00 PM</p>
-
-<p>Sábado</p>
-<p>9:00 AM – 2:00 PM</p>
-
+<p><b>WhatsApp:</b> +506 8322 6720 / +506 8498 9587</p>
+<p><b data-es="Horario:" data-en="Hours:">Horario:</b></p>
+<p data-es="Lunes - Viernes: 7:00 AM – 5:00 PM" data-en="Monday - Friday: 7:00 AM – 5:00 PM">Lunes - Viernes: 7:00 AM – 5:00 PM</p>
+<p data-es="Sábado: 9:00 AM – 2:00 PM" data-en="Saturday: 9:00 AM – 2:00 PM">Sábado: 9:00 AM – 2:00 PM</p>
 </div>
-
 </div>
-
 </section>
 
-<!-- ========================================= -->
-<!-- FOOTER -->
-<!-- ========================================= -->
-
 <footer class="footer">
-
 <div class="footer-container">
-
-<!-- COLUMNA 1 -->
-
 <div class="footer-col">
-
 <h3>PeptidosCR</h3>
-
-<p>
+<p data-es="PeptidosCR es un proveedor enfocado en péptidos y materiales de referencia de alta pureza destinados exclusivamente a investigación." data-en="PeptidosCR is a provider focused on high-purity peptides and reference materials intended exclusively for research.">
 PeptidosCR es un proveedor enfocado en péptidos y materiales de referencia
 de alta pureza destinados exclusivamente a investigación.
 </p>
-
 </div>
-
-<!-- COLUMNA 2 -->
-
 <div class="footer-col">
-
-<h3>Links Rapidos</h3>
-
-<a href="../index.html">Inicio</a>
-<a href="../products/products.html">Productos</a>
-<a href="../contacto/contacto.html">Contacto</a>
-
+<h3 data-es="Links Rápidos" data-en="Quick Links">Links Rápidos</h3>
+<a href="../index.html" data-es="Inicio" data-en="Home">Inicio</a>
+<a href="../products/products.html" data-es="Productos" data-en="Products">Productos</a>
+<a href="../contacto/contacto.html" data-es="Acerca De" data-en="About Us">Acerca De</a>
 </div>
-
-<!-- COLUMNA 3 -->
-
 <div class="footer-col">
-
-<h3>Servicio al Cliente</h3>
-
+<h3 data-es="Servicio al Cliente" data-en="Customer Service">Servicio al Cliente</h3>
 <p><strong>PeptidosCR</strong></p>
-
-<p><span class="highlight">Correo:</span> peptidescr@gmail.com</p>
-
-<p><span class="highlight">Whatsapp:</span> +506 83226720 - 84989587</p>
-
-<p>Lunes a Viernes 9:00 am – 5:00 pm</p>
-
+<p><span class="highlight" data-es="Correo:" data-en="Email:">Correo:</span> peptidescr@gmail.com</p>
+<p><span class="highlight" data-es="Whatsapp:" data-en="WhatsApp:">Whatsapp:</span> +506 83226720 - 84989587</p>
+<p data-es="Lunes a Viernes 9:00 am – 5:00 pm" data-en="Monday to Friday 9:00 am – 5:00 pm">Lunes a Viernes 9:00 am – 5:00 pm</p>
 </div>
-
-<!-- COLUMNA 4 -->
-
 <div class="footer-col">
-
-<h3>Soporte</h3>
-
-<a href="../contacto/contacto.html">Contacto</a>
-
+<h3 data-es="Soporte" data-en="Support">Soporte</h3>
+<a href="../contacto/contacto.html" data-es="Contacto" data-en="Contact">Contacto</a>
 </div>
-
 </div>
-
-<!-- DISCLAIMER LEGAL -->
-
 <div class="footer-disclaimer">
-
-<p>
+<p data-es="Información: Todos los productos de este sitio web están destinados exclusivamente a investigación y desarrollo de laboratorio." data-en="Information: All products on this website are intended exclusively for laboratory research and development.">
 <strong>Información:</strong> Todos los productos de este sitio web están destinados exclusivamente a investigación y desarrollo de laboratorio.
 </p>
-
-<p>
-PeptidosCR opera únicamente como proveedor de productos químicos de investigación.
-</p>
-
 </div>
-
-
-
-<!-- COPYRIGHT -->
-
 <div class="footer-bottom">
-
-<p>© 2026 PeptidosCR - Todos los derechos Reservados</p>
-
+<p>© 2026 PeptidosCR - <span data-es="Todos los derechos Reservados" data-en="All rights reserved">Todos los derechos Reservados</span></p>
 </div>
-
 </footer>
 
-<!-- ========================================= -->
-<!-- BOTÓN WHATSAPP -->
-<!-- ========================================= -->
+<a href="https://wa.me/50683226720" class="whatsapp-btn" target="_blank">💬</a>
 
-<a href="https://wa.me/50683226720" class="whatsapp-btn" target="_blank">
-💬
-</a>
+<!-- Script Global de Idioma y Tema -->
+<script>
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+if (localStorage.getItem('theme') === 'light') {
+    body.classList.add('light-mode');
+}
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light' : 'dark');
+});
 
+const langSwitch = document.getElementById('lang-switch');
+if (localStorage.getItem('lang')) {
+    langSwitch.value = localStorage.getItem('lang');
+    updateLanguage(langSwitch.value);
+}
+langSwitch.addEventListener('change', (e) => {
+    const lang = e.target.value;
+    localStorage.setItem('lang', lang);
+    updateLanguage(lang);
+});
+function updateLanguage(lang) {
+    document.querySelectorAll('[data-es]').forEach(el => {
+        const text = el.getAttribute(`data-${lang}`);
+        if (text) el.textContent = text;
+    });
+}
+</script>
 </body>
 </html>
