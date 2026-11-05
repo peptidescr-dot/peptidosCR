@@ -26,19 +26,21 @@
    VARIABLES MODO CLARO (Blanco y Gris)
 ========================================================= */
 body.light-mode {
-    --color-principal: #b30024;
-    --color-principal-hover: #dc143c;
-    --color-fondo: #f4f4f4;
-    --color-secundario: #ffffff;
-    --color-secundario-hover: #e9e9e9;
-    --color-info: #f8f8f8;
-    --color-texto: #1a1a1a;
-    --color-texto-suave: #555555;
-    --color-muted: #777777;
-    --border-color: #dddddd;
-    --accent-glow: rgba(179, 0, 36, 0.15);
-    --shadow-card: 0 5px 15px rgba(0,0,0,0.08);
-    --shadow-card-hover: 0 12px 30px rgba(179,0,36,0.15);
+--color-principal: #c9183d;
+    --color-principal-hover: #e01e46;
+    --color-fondo: #f8f9fa;               /* Fondo gris ultra claro, muy limpio */
+    --color-secundario: #ffffff;          /* Tarjetas y bloques en blanco puro */
+    --color-secundario-hover: #f1f3f5;    /* Sutil cambio al pasar el mouse */
+    --color-info: #edf2f7;
+    --color-texto: #111827;               /* Texto principal oscuro para alta legibilidad */
+    --color-texto-suave: #4b5563;         /* Texto secundario gris elegante */
+    --color-muted: #9ca3af;
+    
+    --border-color: #e2e8f0;              /* Bordes sutiles y limpios */
+    --accent-glow: rgba(201, 24, 61, 0.15);
+    
+    --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --shadow-card-hover: 0 10px 25px rgba(201, 24, 61, 0.12);
 }
 /* =========================================================
    CONFIGURACIÓN GLOBAL Y RESET
