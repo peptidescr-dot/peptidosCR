@@ -13,8 +13,19 @@
     --color-texto-suave: #b0b0b0;
     --color-muted: #757575;
     --border-color: #222222;
-   /*    VARIABLES PARA MODO CLARO (Blanco y Gris) */
-   body.light-mode {
+    --accent-glow: rgba(220, 20, 60, 0.25);
+    
+    --shadow-card: 0 5px 15px rgba(0,0,0,0.5);
+    --shadow-card-hover: 0 12px 30px rgba(220,20,60,0.25);
+    
+    --radius: 12px;
+    --radius-sm: 8px;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+/* =========================================================
+   VARIABLES MODO CLARO (Blanco y Gris)
+========================================================= */
+body.light-mode {
     --color-principal: #b30024;
     --color-principal-hover: #dc143c;
     --color-fondo: #f4f4f4;
@@ -25,17 +36,10 @@
     --color-texto-suave: #555555;
     --color-muted: #777777;
     --border-color: #dddddd;
+    --accent-glow: rgba(179, 0, 36, 0.15);
+    --shadow-card: 0 5px 15px rgba(0,0,0,0.08);
+    --shadow-card-hover: 0 12px 30px rgba(179,0,36,0.15);
 }
-    --accent-glow: rgba(220, 20, 60, 0.25);
-    
-    --shadow-card: 0 5px 15px rgba(0,0,0,0.5);
-    --shadow-card-hover: 0 12px 30px rgba(220,20,60,0.25);
-    
-    --radius: 12px;
-    --radius-sm: 8px;
-    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
 /* =========================================================
    CONFIGURACIÓN GLOBAL Y RESET
 ========================================================= */
