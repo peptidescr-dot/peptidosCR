@@ -1,40 +1,22 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="es">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Productos | PeptidosCR</title>
-
+<title data-es="Productos | PeptidosCR" data-en="Products | PeptidosCR">Productos | PeptidosCR</title>
 <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body>
-<!-- ========================================= -->
-<!-- SNIPCART -->
-<!-- ========================================= -->
 
 <div hidden id="snipcart" data-api-key="TU_API_KEY_AQUI"></div>
 
-
-<!-- ========================================= -->
-<!-- TOP BAR -->
-<!-- ========================================= -->
-
-<div class="topbar">
+<div class="topbar" data-es="Envíos disponibles en Costa Rica | WhatsApp: +506 8322-6720" data-en="Shipping available in Costa Rica | WhatsApp: +506 8322-6720">
 Envíos disponibles en Costa Rica | WhatsApp: +506 8322-6720
 </div>
 
-<!-- ========================================= -->
-<!-- HEADER / NAVEGACIÓN -->
-<!-- ========================================= -->
-
 <header>
-
 <div class="logo-container">
 <a href="../index.html">
 <img src="../img/peptidescr.jpg" class="logo-img" alt="Logo Peptidos CR">
@@ -42,258 +24,167 @@ Envíos disponibles en Costa Rica | WhatsApp: +506 8322-6720
 </div>
 
 <nav>
-<a href="../index.html">Inicio</a>
-<a href="../products/products.html">Productos</a>
-<a href="../contacto/contacto.html">Contacto</a>
-</nav>
+<a href="../index.html" data-es="Inicio" data-en="Home">Inicio</a>
+<a href="../products/products.html" data-es="Productos" data-en="Products">Productos</a>
+<a href="../contacto/contacto.html" data-es="Contacto" data-en="Contact">Contacto</a>
 
+<div class="site-controls" style="display: flex; align-items: center; gap: 10px; margin-left: 20px;">
+<button id="theme-toggle" class="control-btn" title="Cambiar tema oscuro/claro" style="background:var(--color-secundario); color:var(--color-texto); border:1px solid var(--border-color); padding:5px 8px; border-radius:var(--radius-sm); cursor:pointer;">🌓</button>
+<select id="lang-switch" class="control-select" style="background:var(--color-secundario); color:var(--color-texto); border:1px solid var(--border-color); padding:5px 8px; border-radius:var(--radius-sm); cursor:pointer;">
+<option value="es">ES</option>
+<option value="en">EN</option>
+</select>
+</div>
+</nav>
 </header>
 
 <section class="products-page">
-
-<h1>Nuestros Productos</h1>
+<h1 data-es="Nuestros Productos" data-en="Our Products">Nuestros Productos</h1>
 
 <div class="products-grid">
 
 <!-- AMP1P 5mg -->
 <a href="../listproducts/amp1p5mg.html" class="product-link">
- 
 <div class="product-card">
-
 <img src="../img/amp1p5mg.jpg" alt="AMP-1P 5mg">
-
 <h2>AMP-1P 5mg</h2>
-
-<p><strong>Tipo:</strong> Péptido metabólico (agonista del receptor GLP-1).</p>
-
-<p><strong>Función:</strong> Apoya la regulación de la glucosa y ayuda a disminuir el apetito, contribuyendo al control metabólico y a la reducción de peso corporal.</p>
-
-<p><strong>Aplicación:</strong> Administración por vía inyectable bajo supervisión profesional.</p>
-
+<p><strong data-es="Tipo:" data-en="Type:">Tipo:</strong> <span data-es="Péptido metabólico (agonista del receptor GLP-1)." data-en="Metabolic peptide (GLP-1 receptor agonist).">Péptido metabólico (agonista del receptor GLP-1).</span></p>
+<p><strong data-es="Función:" data-en="Function:">Función:</strong> <span data-es="Apoya la regulación de la glucosa y ayuda a disminuir el apetito." data-en="Supports glucose regulation and helps decrease appetite.">Apoya la regulación de la glucosa y ayuda a disminuir el apetito.</span></p>
 </div>
 </a>
 
 <!-- AMP1P 10mg -->
 <a href="../listproducts/amp1p10mg.html" class="product-link">
 <div class="product-card">
-
 <img src="../img/amp1p10mg.jpg" alt="AMP-1P 10mg">
-
 <h2>AMP-1P 10mg</h2>
-
-<p><strong>Tipo:</strong> Péptido metabólico (agonista del receptor GLP-1).</p>
-
-<p><strong>Función:</strong> Apoya la regulación de la glucosa y ayuda a disminuir el apetito, contribuyendo al control metabólico y a la reducción de peso corporal.</p>
-
-<p><strong>Aplicación:</strong> Administración por vía inyectable bajo supervisión profesional.</p>
-
+<p><strong data-es="Tipo:" data-en="Type:">Tipo:</strong> <span data-es="Péptido metabólico (agonista del receptor GLP-1)." data-en="Metabolic peptide (GLP-1 receptor agonist).">Péptido metabólico (agonista del receptor GLP-1).</span></p>
+<p><strong data-es="Función:" data-en="Function:">Función:</strong> <span data-es="Apoya la regulación de la glucosa y ayuda a disminuir el apetito." data-en="Supports glucose regulation and helps decrease appetite.">Apoya la regulación de la glucosa y ayuda a disminuir el apetito.</span></p>
 </div>
 </a>
-<!-- AMP2P -->
+
+<!-- AMP2P 10mg -->
 <a href="../listproducts/amp2p10mg.html" class="product-link">
 <div class="product-card">
-
 <img src="../img/amp2p10mg.jpg" alt="AMP-2P 10mg">
-
 <h2>AMP-2P 10mg</h2>
-
-<p><strong>Tipo:</strong> Péptido metabólico (agonista dual de receptores GLP-1 y GIP).</p>
-
-<p><strong>Función:</strong> Apoya la regulación del metabolismo y la glucosa, favoreciendo la reducción del apetito y los protocolos de disminución de grasa corporal.</p>
-
-<p><strong>Aplicación:</strong> Administración por vía inyectable bajo supervisión profesional.</p>
-
+<p><strong data-es="Tipo:" data-en="Type:">Tipo:</strong> <span data-es="Péptido metabólico (agonista dual GLP-1 y GIP)." data-en="Metabolic peptide (GLP-1 and GIP dual agonist).">Péptido metabólico (agonista dual GLP-1 y GIP).</span></p>
 </div>
 </a>
 
+<!-- AMP2P 15mg -->
 <a href="../listproducts/amp2p15mg.html" class="product-link"> 
 <div class="product-card">
-
 <img src="../img/amp2p15mg.jpg" alt="AMP-2P 15mg">
-
 <h2>AMP-2P 15mg</h2>
-
-<p><strong>Tipo:</strong> Péptido metabólico (agonista dual de receptores GLP-1 y GIP).</p>
-
-<p><strong>Función:</strong> Apoya la regulación del metabolismo y la glucosa, favoreciendo la reducción del apetito y los protocolos de disminución de grasa corporal.</p>
-
-<p><strong>Aplicación:</strong> Administración por vía inyectable bajo supervisión profesional.</p>
-
+<p><strong data-es="Tipo:" data-en="Type:">Tipo:</strong> <span data-es="Péptido metabólico (agonista dual GLP-1 y GIP)." data-en="Metabolic peptide (GLP-1 and GIP dual agonist).">Péptido metabólico (agonista dual GLP-1 y GIP).</span></p>
 </div>
 </a>
-<!-- AMP3P -->
+
+<!-- AMP3P 6mg -->
 <a href="../listproducts/amp3p6mg.html" class="product-link"> 
 <div class="product-card">
-
 <img src="../img/amp3p6mg.jpg" alt="AMP-3P 6mg">
-
 <h2>AMP-3P 6mg</h2>
-
-<p><strong>Tipo:</strong> Péptido metabólico (agonista de receptores relacionados con el metabolismo energético).</p>
-
-<p><strong>Función:</strong> Apoya la regulación del metabolismo, contribuyendo al control del apetito y a los procesos de reducción de grasa corporal.</p>
-
-<p><strong>Aplicación:</strong> Administración por vía inyectable bajo supervisión profesional.</p>
-
+<p><strong data-es="Tipo:" data-en="Type:">Tipo:</strong> <span data-es="Péptido metabólico (agonista energético)." data-en="Metabolic peptide (energy agonist).">Péptido metabólico (agonista energético).</span></p>
 </div>
 </a>
+
 <!-- AMP3P 12mg -->
- <a href="../listproducts/amp3p12mg.html" class="product-link"> 
+<a href="../listproducts/amp3p12mg.html" class="product-link"> 
 <div class="product-card">
-
 <img src="../img/amp3p12mg.jpg" alt="AMP-3P 12mg">
-
 <h2>AMP-3P 12mg</h2>
-
-<p><strong>Tipo:</strong> Péptido metabólico (agonista de receptores relacionados con el metabolismo energético).</p>
-
-<p><strong>Función:</strong> Apoya la regulación del metabolismo, contribuyendo al control del apetito y a los procesos de reducción de grasa corporal.</p>
-
-<p><strong>Aplicación:</strong> Administración por vía inyectable bajo supervisión profesional.</p>
-
+<p><strong data-es="Tipo:" data-en="Type:">Tipo:</strong> <span data-es="Péptido metabólico (agonista energético)." data-en="Metabolic peptide (energy agonist).">Péptido metabólico (agonista energético).</span></p>
 </div>
 </a>
+
 <!-- BACTERIOSTATIC WATER -->
 <a href="../listproducts/BW.html" class="product-link"> 
 <div class="product-card">
-
 <img src="../img/BW.jpg" alt="Bacteriostatic Water">
-
 <h2>Bacteriostatic Water</h2>
-
-<p><strong>Tipo:</strong> Agua estéril bacteriostática para uso farmacéutico.</p>
-
-<p><strong>Función:</strong> Se utiliza para reconstituir o diluir medicamentos y péptidos inyectables, ayudando a mantener la solución libre de crecimiento bacteriano.</p>
-
-<p><strong>Aplicación:</strong> Uso como diluyente en preparaciones inyectables bajo condiciones estériles.</p>
-
+<p><strong data-es="Tipo:" data-en="Type:">Tipo:</strong> <span data-es="Agua estéril bacteriostática." data-en="Bacteriostatic sterile water.">Agua estéril bacteriostática.</span></p>
 </div>
 </a>
- <!-- TESAMORELIN -->
 
+<!-- TESAMORELIN -->
 <div class="product-card">
-
 <img src="../img/tesamorelin.jpg" alt="Tesamorelin">
-
 <h2>Tesamorelin</h2>
-
-<p><strong>Tipo:</strong> Péptido liberador de la hormona del crecimiento (GHRH).</p>
-
-<p><strong>Función:</strong> Su principal función es la reducción del exceso de grasa abdominal visceral (lipodistrofia), mejorando la composición corporal sin afectar significativamente los niveles de glucosa en el corto plazo.</p>
-
-<p><strong>Aplicación:</strong> Administración por vía inyectable (subcutánea), generalmente bajo supervisión profesional.</p>
-
+<p><strong data-es="Tipo:" data-en="Type:">Tipo:</strong> <span data-es="Péptido liberador de hormona de crecimiento." data-en="Growth hormone-releasing peptide.">Péptido liberador de hormona de crecimiento.</span></p>
 </div> 
 
 </div>
-
 </section>
 
-  
-
-<!-- ========================================= -->
-<!-- FOOTER -->
-<!-- ========================================= -->
-
 <footer class="footer">
-
 <div class="footer-container">
-
-
-<!-- COLUMNA 1 -->
-
 <div class="footer-col">
-
 <h3>PeptidosCR</h3>
-
-<p>
+<p data-es="PeptidosCR es un proveedor enfocado en péptidos y materiales de referencia de alta pureza destinados exclusivamente a investigación." data-en="PeptidosCR is a provider focused on high-purity peptides and reference materials intended exclusively for research.">
 PeptidosCR es un proveedor enfocado en péptidos y materiales de referencia
 de alta pureza destinados exclusivamente a investigación.
 </p>
-
 </div>
-
-
-<!-- COLUMNA 2 -->
-
 <div class="footer-col">
-
-<h3>Links Rapidos</h3>
-
-<a href="../index.html">Inicio</a>
-<a href="../products/products.html">Productos</a>
-<a href="../contacto/contacto.html">Contacto</a>
-
+<h3 data-es="Links Rápidos" data-en="Quick Links">Links Rápidos</h3>
+<a href="../index.html" data-es="Inicio" data-en="Home">Inicio</a>
+<a href="../products/products.html" data-es="Productos" data-en="Products">Productos</a>
+<a href="../contacto/contacto.html" data-es="Acerca De" data-en="About Us">Acerca De</a>
 </div>
-
-
-<!-- COLUMNA 3 -->
-
 <div class="footer-col">
-
-<h3>Servicio al Cliente</h3>
-
+<h3 data-es="Servicio al Cliente" data-en="Customer Service">Servicio al Cliente</h3>
 <p><strong>PeptidosCR</strong></p>
-
-<p><span class="highlight">Correo:</span> peptidescr@gmail.com</p>
-
-<p><span class="highlight">Whatsapp:</span> +506 83226720 - 84989587</p>
-
-<p>Lunes a Viernes 9:00 am – 5:00 pm</p>
-
+<p><span class="highlight" data-es="Correo:" data-en="Email:">Correo:</span> peptidescr@gmail.com</p>
+<p><span class="highlight" data-es="Whatsapp:" data-en="WhatsApp:">Whatsapp:</span> +506 83226720 - 84989587</p>
+<p data-es="Lunes a Viernes 9:00 am – 5:00 pm" data-en="Monday to Friday 9:00 am – 5:00 pm">Lunes a Viernes 9:00 am – 5:00 pm</p>
 </div>
-
-
-<!-- COLUMNA 4 -->
-
 <div class="footer-col">
-
-<h3>Soporte</h3>
-
-<a href="../contacto/contacto.html">Contacto</a>
-
+<h3 data-es="Soporte" data-en="Support">Soporte</h3>
+<a href="../contacto/contacto.html" data-es="Contacto" data-en="Contact">Contacto</a>
 </div>
-
 </div>
-
-
-
-<!-- DISCLAIMER LEGAL -->
-
 <div class="footer-disclaimer">
-
-<p>
+<p data-es="Información: Todos los productos de este sitio web están destinados exclusivamente a investigación y desarrollo de laboratorio." data-en="Information: All products on this website are intended exclusively for laboratory research and development.">
 <strong>Información:</strong> Todos los productos de este sitio web están destinados exclusivamente a investigación y desarrollo de laboratorio.
 </p>
-
-<p>
-PeptidosCR opera únicamente como proveedor de productos químicos de investigación.
-</p>
-
 </div>
-
-
-
-<!-- COPYRIGHT -->
-
 <div class="footer-bottom">
-
-<p>© 2026 PeptidosCR - Todos los derechos Reservados</p>
-
+<p>© 2026 PeptidosCR - <span data-es="Todos los derechos Reservados" data-en="All rights reserved">Todos los derechos Reservados</span></p>
 </div>
-
 </footer>
 
+<a href="https://wa.me/50683226720" class="whatsapp-btn" target="_blank">💬</a>
 
+<!-- Script Global de Idioma y Tema -->
+<script>
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+if (localStorage.getItem('theme') === 'light') {
+    body.classList.add('light-mode');
+}
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light' : 'dark');
+});
 
-<!-- ========================================= -->
-<!-- BOTÓN WHATSAPP -->
-<!-- ========================================= -->
-
-<a href="https://wa.me/50683226720" class="whatsapp-btn" target="_blank">
-💬
-</a>
-
-
+const langSwitch = document.getElementById('lang-switch');
+if (localStorage.getItem('lang')) {
+    langSwitch.value = localStorage.getItem('lang');
+    updateLanguage(langSwitch.value);
+}
+langSwitch.addEventListener('change', (e) => {
+    const lang = e.target.value;
+    localStorage.setItem('lang', lang);
+    updateLanguage(lang);
+});
+function updateLanguage(lang) {
+    document.querySelectorAll('[data-es]').forEach(el => {
+        const text = el.getAttribute(`data-${lang}`);
+        if (text) el.textContent = text;
+    });
+}
+</script>
 </body>
 </html>
