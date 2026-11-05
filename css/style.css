@@ -181,6 +181,27 @@ nav a:hover::after {
     margin-bottom: 25px;
 }
 
+.site-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.control-btn, .control-select {
+    background: var(--color-secundario);
+    color: var(--color-texto);
+    border: 1px solid var(--border-color);
+    padding: 6px 10px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.control-btn:hover {
+    border-color: var(--color-principal);
+}
+
 /* =========================================================
    BOTÓN HERO
 ========================================================= */
