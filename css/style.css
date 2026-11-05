@@ -2,6 +2,7 @@
    VARIABLES GLOBALES & SISTEMA DE DISEÑO (Taste Skill)
 ========================================================= */
 :root {
+/*    VARIABLES PARA MODO OSCURO (Por defecto) */
     --color-principal: #dc143c;
     --color-principal-hover: #ff1e4b;
     --color-fondo: #0a0a0a;
@@ -11,8 +12,20 @@
     --color-texto: #ffffff;
     --color-texto-suave: #b0b0b0;
     --color-muted: #757575;
-    
     --border-color: #222222;
+   /*    VARIABLES PARA MODO CLARO (Blanco y Gris) */
+   body.light-mode {
+    --color-principal: #b30024;
+    --color-principal-hover: #dc143c;
+    --color-fondo: #f4f4f4;
+    --color-secundario: #ffffff;
+    --color-secundario-hover: #e9e9e9;
+    --color-info: #f8f8f8;
+    --color-texto: #1a1a1a;
+    --color-texto-suave: #555555;
+    --color-muted: #777777;
+    --border-color: #dddddd;
+}
     --accent-glow: rgba(220, 20, 60, 0.25);
     
     --shadow-card: 0 5px 15px rgba(0,0,0,0.5);
