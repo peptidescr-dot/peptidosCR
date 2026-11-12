@@ -169,7 +169,7 @@ de alta pureza destinados exclusivamente a investigación.
 
 <a href="https://wa.me/50683226720" class="whatsapp-btn" target="_blank">💬</a>
 
-<!-- Script Integrado de Desplazamiento, Tema e Idioma -->
+<!-- Script Global de Desplazamiento, Tema e Idioma -->
 <script>
 const slider = document.querySelector('.mobile-slider');
 let isDown = false, startX, scrollLeft;
@@ -197,28 +197,39 @@ if(track){
     });
 }
 
-// Control de Tema (Oscuro / Claro)
+// Control de Tema (Oscuro / Claro) - Con verificación de seguridad
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
+
 if (localStorage.getItem('theme') === 'light') {
     body.classList.add('light-mode');
 }
-themeToggle.addEventListener('click', () => {
-    body.classList.toggle('light-mode');
-    localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light' : 'dark');
-});
+
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('light-mode');
+        if (body.classList.contains('light-mode')) {
+            localStorage.setItem('theme', 'light');
+        } else {
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+}
 
 // Control de Idioma (ES / EN)
 const langSwitch = document.getElementById('lang-switch');
-if (localStorage.getItem('lang')) {
-    langSwitch.value = localStorage.getItem('lang');
-    updateLanguage(langSwitch.value);
+if (langSwitch) {
+    if (localStorage.getItem('lang')) {
+        langSwitch.value = localStorage.getItem('lang');
+        updateLanguage(langSwitch.value);
+    }
+    langSwitch.addEventListener('change', (e) => {
+        const lang = e.target.value;
+        localStorage.setItem('lang', lang);
+        updateLanguage(lang);
+    });
 }
-langSwitch.addEventListener('change', (e) => {
-    const lang = e.target.value;
-    localStorage.setItem('lang', lang);
-    updateLanguage(lang);
-});
+
 function updateLanguage(lang) {
     document.querySelectorAll('[data-es]').forEach(el => {
         const text = el.getAttribute(`data-${lang}`);
